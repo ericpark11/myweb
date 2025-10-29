@@ -6,7 +6,11 @@ const experiences = [
         id: 1,
         title: "TFI International",
         role: "Data Engineer (Co-op)",
-        description: [],
+        description: [
+            "Accomplished a 30% reduction in document processing time and a 25% boost in data accuracy by engineering an AI-powered PDF data extraction platform that automated cross-department workflows and standardized validation pipelines",
+            "Increased truck-load acquisition by 40% and revenue by 15% by developing a Python/Selenium-based intelligent bidding bot that dynamically scraped, analyzed, and optimized freight oﬀers using real-time logistics data",
+            "Eliminated 95% of manual data entry and cut operational delays by 20% by orchestrating data integration pipelines that connected internal databases with external RESTful APIs, ensuring seamless synchronization between business systems and third-party platforms",
+        ],
         date: "May 2024 – Present",
         image: "/experiences/tfi.png",
         tags: [],
@@ -16,8 +20,8 @@ const experiences = [
         title: "Joas Korea",
         role: "Full-Stack Software Developer Intern",
         description: [
-            "Built the website from scratch using React, Typescript, MongoDB and Firebase www.joasnetworks.com", 
-            "The website is for international attraction, garnering customers from other countries and increasing company growth internationally, resulting in 10% more traﬃc increasing 0.3% overall sales in the company"
+            "Spearheaded the full-stack development and launch of JOAS’s international website, establishing a scalable frontend and backend infrastructure to support global traﬃc and multilingual access, resulting in a robust international platform www.joasnetworks.com", 
+            "Enhanced global reach and conversion rates by implementing SEO optimization, analytics integration, and performance tuning, leading to a 10% increase in overseas web traﬃc and a 0.3% rise in overall company sales"
         ],
         date: "May 2023 – August 2023",
         image: "/experiences/joas.jpeg",
@@ -29,8 +33,8 @@ const experiences = [
         title: "McMaster Parking Services",
         role: "Web Developer",
         description: [
-            "Optimized websites for mobile and cross-browser compatibility, improving accessibility and user experience for over 5,000 monthly visitors by conducting keyword research",
-            "Customized WordPress themes and plugins to align with specific project goals, reducing development time by 25%"
+            "Optimized WordPress site performance by implementing caching strategies, CDN integration, and image compression, achieving a 20% reduction in page load time and significantly improving overall responsiveness",
+            "Improved accessibility and user experience for 5,000+ monthly visitors by conducting SEO keyword research, usability audits, and front-end enhancements, leading to higher engagement and better search visibility"
         ],
         date: "October 2023 – May 2024",
         image: "/experiences/mcmaster.png",
