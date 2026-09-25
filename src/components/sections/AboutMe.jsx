@@ -18,20 +18,18 @@ export const AboutMe = () => {
                         </h3>
 
                         <p className="text-muted-foreground">
-                                Hi, I'm Eric Park — a third-year Computer Science student at McMaster University with a passion for building impactful, user-centric software.
-                                I specialize in full-stack development, with experience in React, Node.js, and database technologies like MongoDB. From crafting real-time transit apps to working on automating tasks and pipelining, I love solving complex problems and learning by building.  
+                            Hi, I'm Eric Park — an Honours Computer Science co-op student with a Statistics minor at McMaster University. I hold a 3.8/4.0 GPA and expect to graduate in April 2027. My experience spans full-stack development, data engineering, AI assistants, and automated testing.
                         </p>
 
                         <p className="text-muted-foreground">
-                            I'm currently looking for internship/co-op opportunities for 2027 Spring and Summer term where I can contribute to meaningful projects, grow as a developer, and collaborate with a passionate team.
-                            Outside of tech, you'll probably find me in the gym, playing pool or basketball with my friends, or talking about cars.
+                            I build practical software for financial services, logistics, and mobile marketplaces. Outside of tech, you'll probably find me in the gym, playing pool or basketball with my friends, or talking about cars.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-10 justify-center">
                             <a href="#contact" className="cosmic-button">
                                 {" "}
                                 Get In Touch
                             </a>
-                            <a href="#contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                            <a href="/Eric_Park_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 {" "}
                                 Check Resume
                             </a>
@@ -47,8 +45,8 @@ export const AboutMe = () => {
                                 <div className="text-left">
                                 <h4 className="font-semibold text-lg">Extra Curricular</h4>
                                 <p className="text-muted-foreground">
-                                    Led mentorship programs and academic events through the Computer Science Society; designed and maintained websites for student-run finance initiatives. Contributing to open-source projects with Google Developer Student Club McMaster.
-                                </p>
+                            Involved with the Google Developer Group, DeGroote Finance & Investment Council, CS Society, DeltaHacks, and intramural sports at McMaster.
+                        </p>
                                 </div>
                             </div>
                         </div>
@@ -61,8 +59,8 @@ export const AboutMe = () => {
                                 <div className="text-left">
                                 <h4 className="font-semibold text-lg">Project Experience</h4>
                                 <p className="text-muted-foreground">
-                                    Built real-time apps including a campus shuttle tracker pitched to transit providers, a gym companion app for students, and a stock market predictor with a 48% model improvement — all focused on solving real-world problems with scalable tech.
-                                </p>
+                            Leading two software engineers building Gavel, a real-time mobile bidding marketplace. Led the team behind Shuttle Now, a crowdsourced GPS shuttle tracker pitched to transit providers and McMaster stakeholders.
+                        </p>
                                 </div>
                             </div>
                         </div>
@@ -75,9 +73,8 @@ export const AboutMe = () => {
                                 <div className="text-left">
                                 <h4 className="font-semibold text-lg">Work Experience</h4>
                                 <p className="text-muted-foreground">
-                                    Developed full-stack apps, optimized websites, and collaborated with teams at McMaster.
-                                    Built full-stack apps and optimized websites, contributing to a 10% traffic increase and 0.3% sales growth at JOAS Korea.
-                                </p>
+                            Sales engineering at Acceldata; market risk and wealth technology at Scotiabank; data engineering at TFI International; and full-stack development at JOAS Korea.
+                        </p>
                                 </div>
                             </div>
                         </div>

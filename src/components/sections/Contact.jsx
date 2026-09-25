@@ -56,8 +56,8 @@ export const Contact = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     Get In <span className="text-primary"> Touch</span>
                 </h2>
-                <p className="text-cetner text-muted-foregroumd mb-12 max-w-2xl mx-auto">
-                    Have a projec tin mind or watn to collab?
+                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                    Have a project in mind or want to connect? I’d love to hear from you.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="flex flex-col justify-center space-y-8">

@@ -3,27 +3,38 @@ import { ArrowRight, ExternalLink, Github, Camera  } from "lucide-react";
 
 const projects = [
     {
-        id: 1,
-        title: "Shuttle Now",
-        description: [
-            "Pioneered the proposal and product pitch of real-time shuttle bus tracking platform to Voyago Transportation, Attridge Transportation, McMaster Parking Services, and the McMaster Business Development Oﬃce, showcasing scalability and impact",
-            "Leading a software team to design and develop Shuttle Now with live location updates, enabling students to view shuttle bus positions in-app and significantly reduce waiting-time uncertainty by 70%",
-            "Oversaw end-to-end product lifecycle, from ideation and prototype development to deployment and stakeholder demos, ensuring alignment between technical design and user needs",
+        "id": 1,
+        "title": "Gavel",
+        "date": "July 2025 – Present",
+        "description": [
+            "Leading two software engineers building a cross-platform mobile marketplace with real-time bidding for products and services, dynamic pricing, and live countdowns.",
+            "Shipped ratings and reviews, real-time activity feeds, saved and archived items, and moderation-aware notifications to build trust and repeat engagement."
         ],
-        image: "/projects/shuttleNow.png",
-        tags: ["React Native", "GPS", "Business"],
-        githubUrl: "https://github.com/shuttlenow",
+        "tags": [
+            "React Native",
+            "Firebase",
+            "NativeWind",
+            "Gemini",
+            "OpenAI"
+        ],
+        "demoUrl": "https://www.gavel-app.com",
+        "image": "/projects/gavel.png"
     },
     {
-        id: 2,
-        title: "Auction App (Fixr)",
-        description: [
-            "Developed a cross-platform mobile auction app enabling real-time bidding for on-demand services, integrating dynamic pricing and live countdown features to enhance user engagement",
-            "Designed and implemented backend APIs for bidding logic, time synchronization, and secure communications, ensuring fairness, data integrity, and smooth bid competition across all devices",
+        "id": 2,
+        "title": "Shuttle Now",
+        "date": "September 2023 – May 2025",
+        "description": [
+            "Architected a crowdsourced GPS shuttle-tracking platform and took it from prototype to formal pitches with Voyago Transportation, Attridge Transportation, and McMaster Parking & Business Development.",
+            "Led the software team shipping live in-app shuttle positions, replacing schedule guesswork with real-time crowdsourced location data."
         ],
-        image: "",
-        tags: ["React Native", "TailwindCSS", "NodeJS", "ExpressJS", "Docker", "GKE", "PostgreSQL"],
-        githubUrl: "",
+        "image": "/projects/shuttleNow.png",
+        "tags": [
+            "React Native",
+            "Crowdsourcing",
+            "GPS"
+        ],
+        "githubUrl": "https://github.com/shuttlenow"
     },
     {
         id: 3,
@@ -36,19 +47,8 @@ const projects = [
         tags: ["React Native", "TailwindCSS", "NodeJS", "ExpressJS", "Docker", "GKE", "PostgreSQL"],
         githubUrl: "https://github.com/DSC-McMaster-U/DBAC-Companion-App",
     },
-    // {
-    //     id: 3,
-    //     title: "Stock Predict",
-    //     description: [
-    //         "An applications that predict tomorrow’s S&P 500 index price using historical data. And cleaning up the data with pandas",
-    //         "Training a random forest model and make predictions using back-testing. Then, improve the model 48% by adding predictors",
-    //     ],
-    //     image: "/projects/stock.jpg",
-    //     tags: ["React", "TailwindCSS", "MongoDB"],
-    //     githubUrl: "https://github.com/ericpark11/StockPredict",
-    // },
-];
 
+];
 
 export const Projects = () => {
   return (
@@ -58,7 +58,7 @@ export const Projects = () => {
           Featured <span className="text-primary">Projects</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully crafted.
+          Mobile applications for real-time bidding, campus transit, and the student gym experience.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

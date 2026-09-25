@@ -3,33 +3,116 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const experiences = [
     {
-        id: 1,
-        title: "TFI International",
-        role: "Data Engineer (Co-op)",
-        description: [
-            "Accomplished a 30% reduction in document processing time and a 25% boost in data accuracy by engineering an AI-powered PDF data extraction platform that automated cross-department workflows and standardized validation pipelines",
-            "Increased truck-load acquisition by 40% and revenue by 15% by developing a Python/Selenium-based intelligent bidding bot that dynamically scraped, analyzed, and optimized freight oﬀers using real-time logistics data",
-            "Eliminated 95% of manual data entry and cut operational delays by 20% by orchestrating data integration pipelines that connected internal databases with external RESTful APIs, ensuring seamless synchronization between business systems and third-party platforms",
+        "id": 1,
+        "title": "Acceldata",
+        "role": "Sales Engineer",
+        "date": "September 2026 – Present",
+        "location": "Kitchener, Ontario",
+        "tags": [
+            "Airflow",
+            "Kafka",
+            "Spark",
+            "AWS",
+            "Azure"
         ],
-        date: "May 2024 – Present",
-        image: "/experiences/tfi.png",
-        tags: [],
+        "description": [
+            "Partner with prospective clients to understand technical and business requirements, delivering tailored product demonstrations and solution recommendations.",
+            "Collaborate with sales, engineering, and product teams on technical solutions, integration questions, and translating product capabilities into business value."
+        ],
+        "image": "/experiences/acceldata.webp"
     },
     {
-        id: 2,
-        title: "Joas Korea",
-        role: "Full-Stack Software Developer Intern",
-        description: [
-            "Spearheaded the full-stack development and launch of JOAS’s international website, establishing a scalable frontend and backend infrastructure to support global traﬃc and multilingual access, resulting in a robust international platform www.joasnetworks.com", 
-            "Enhanced global reach and conversion rates by implementing SEO optimization, analytics integration, and performance tuning, leading to a 10% increase in overseas web traﬃc and a 0.3% rise in overall company sales"
+        "id": 2,
+        "title": "Scotiabank · Global Markets",
+        "role": "Market Risk Engineer Co-op",
+        "date": "May 2026 – August 2026",
+        "location": "Toronto, Ontario",
+        "tags": [
+            "Java",
+            "Dropwizard",
+            "Cassandra",
+            "OpenAPI / Swagger",
+            "Docker",
+            "Maven"
         ],
-        date: "May 2023 – August 2023",
-        image: "/experiences/joas.jpeg",
-        tags: ["React", "Typescript", "NextJs", "TailwindCSS", "NextIntl", "MongoDB", "Firebase"],
-        demoUrl: "https://www.joasnetworks.com/",
+        "description": [
+            "Built Java REST APIs and CSV-processing workflows to ingest, normalize, and classify datasets, generate historical outputs, and package results into validated ZIP artifacts.",
+            "Implemented business-rule classification and transformations using reference metadata, configurable input lists, matrix data, and delivery-term calculations.",
+            "Designed Cassandra persistence schemas and added JUnit regression coverage for output generation, integrity checks, completion artifacts, deterministic processing, and classification."
+        ],
+        "image": "/experiences/scotiabank.png"
     },
     {
-        id: 3,
+        "id": 3,
+        "title": "Scotiabank · Global Wealth",
+        "role": "Software Engineer Co-op",
+        "date": "January 2026 – May 2026",
+        "location": "Toronto, Ontario",
+        "tags": [
+            "Java",
+            "Spring Boot",
+            "Next.js",
+            "FastAPI",
+            "Playwright",
+            "PostgreSQL",
+            "Cosmos DB",
+            "Azure",
+            "Docker"
+        ],
+        "description": [
+            "Built a CRM platform centralizing client data for wealth advisors, reducing data-collection time by approximately 40% in pre/post workflow benchmarks.",
+            "Shipped an LLM chat assistant for natural-language client queries, with multi-agent routing, session persistence, and Cosmos DB caching over PostgreSQL storage.",
+            "Built an API-driven QA platform that generates user stories and executes them as Playwright tests, reducing manual test-case authoring.",
+            "Added a human approval gate before test execution and debuggable reports after each run, giving QA visibility and sign-off control."
+        ],
+        "image": "/experiences/scotiabank.png"
+    },
+    {
+        "id": 4,
+        "title": "TFI International",
+        "role": "Data Engineer Co-op",
+        "date": "May 2025 – December 2025",
+        "location": "Mississauga, Ontario",
+        "image": "/experiences/tfi.png",
+        "tags": [
+            "Python",
+            "Azure AI",
+            "MongoDB",
+            "SQL",
+            "Selenium",
+            "CI/CD",
+            "Unit Testing"
+        ],
+        "description": [
+            "Engineered an Azure AI OCR document-extraction platform with standardized validation pipelines, cutting per-document processing time by approximately 30%, measured from processing logs.",
+            "Built a Python/Selenium bot to scrape and rank freight offers using real-time logistics data; monthly load reports showed approximately 40% more truck-load acquisitions after rollout.",
+            "Eliminated most manual operations data entry through integration pipelines syncing internal databases with external RESTful APIs and third-party platforms."
+        ]
+    },
+    {
+        "id": 5,
+        "title": "JOAS Korea",
+        "role": "Full Stack Software Engineer Intern",
+        "date": "May 2024 – August 2024",
+        "location": "Seoul, Korea",
+        "image": "/experiences/joas.jpeg",
+        "tags": [
+            "React",
+            "TypeScript",
+            "Next.js",
+            "Tailwind CSS",
+            "MongoDB",
+            "Firebase"
+        ],
+        "demoUrl": "https://www.joasnetworks.com/",
+        "description": [
+            "Launched JOAS’s first international website, built for global traffic, driving a 10% increase in overseas web traffic.",
+            "Implemented multilingual SEO, hreflang, structured metadata, Google Analytics event tracking, and image and bundle optimizations to improve regional visibility and performance."
+        ]
+    }
+,
+    {
+        id: 6,
         title: "McMaster Parking Services",
         role: "Web Developer",
         description: [
@@ -42,7 +125,6 @@ const experiences = [
         demoUrl: "https://parking.mcmaster.ca/",
     },
 ];
-
 
 export const Experiences = () => {
     return (
@@ -75,7 +157,7 @@ export const Experiences = () => {
                                 <div>
                                     <h3 className="text-xl text-primary font-bold mb-1">{experience.title}</h3>
                                     <h4 className="text-md font-semibold mb-1">{experience.role}</h4>
-                                    <p className="text-sm text-muted-foreground font-semibold mb-1">{experience.date}</p>
+                                    <p className="text-sm text-muted-foreground font-semibold mb-1">{experience.date}{experience.location ? ` · ${experience.location}` : ""}</p>
                                     <div className="flex flex-wrap gap-2 mb-4">
                                         {experience.tags.map((tag, i) => (
                                             <span
@@ -101,6 +183,7 @@ export const Experiences = () => {
                                             <a
                                                 href={experience.demoUrl}
                                                 target="_blank"
+                                                rel="noopener noreferrer"
                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                             >
                                                 <ExternalLink size={20} />
@@ -110,6 +193,7 @@ export const Experiences = () => {
                                             <a
                                                 href={experience.githubUrl}
                                                 target="_blank"
+                                                rel="noopener noreferrer"
                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                             >
                                                 <Github size={20} />
@@ -127,7 +211,8 @@ export const Experiences = () => {
                     <a
                         className="cosmic-button w-fit flex items-center mx-auto gap-2"
                         target="_blank"
-                        href="https://github.com/ericpark11"
+                                                rel="noopener noreferrer"
+                        href="/Eric_Park_Resume.pdf"
                     >
                         Check My Resume <ArrowRight size={16} />
                     </a>

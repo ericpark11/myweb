@@ -20,7 +20,7 @@ export const Hero = () => {
                     </h1>
                     <span className="text-lg md:text-xl text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                         {" "}
-                        I am a 3rd year Computer Science student
+                        I am an Honours Computer Science co-op student
                     </span>
                         <span className="text-lg md:text-xl text-xl text-muted-foreground text-primary max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                             {" "}
